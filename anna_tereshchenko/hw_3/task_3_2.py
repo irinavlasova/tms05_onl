@@ -1,2 +1,4 @@
 word = input('Type a word:')
-print(f"{word}ing")
+commands = word.split()
+arr = [f'{w}ing' for w in commands]
+print(' '.join(arr))
