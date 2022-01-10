@@ -3,6 +3,6 @@ b = a.split()
 print('b;', b)
 k = []
 for c in b:
-    d =(c + "ing")
+    d = (c + "ing")
     print(d)
 print(k)
