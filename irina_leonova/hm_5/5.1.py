@@ -1,7 +1,22 @@
-a = input("Загаданное число: ")
-print(a)
+while True:
+    a = input("Загаданное число: ")
+    if a.isdigit():
+        var = True
+    else:
+        print("Вводите только числа, без пробелов")
+        continue
+    set_a = set(a)
+    if len(a) == len(set_a):
+        break
+    else:
+        print("Есть одинаковые")
 while True:
     b = input("Ваше число: ")
+    if b.isdigit():
+        var = True
+    else:
+        print("Вводите только числа,без пробелов")
+        continue
     c = 0
     k = 0
     for i in range(0, 4):
