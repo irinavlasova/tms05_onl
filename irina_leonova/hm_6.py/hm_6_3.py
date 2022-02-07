@@ -43,7 +43,7 @@ while True:
                 print("Частное: ", number_1 // number_2)
             else:
                 print("Частное: ", round(number_1 / number_2) - 1,
-                  ", Остаток: ", number_1 % number_2)
+                      ', Остаток: ', number_1 % number_2)
         if number_1 == 0 or number_2 == 0:
             print("None")
     break
