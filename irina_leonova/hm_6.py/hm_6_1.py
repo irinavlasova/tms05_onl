@@ -12,20 +12,20 @@ while True:
     else:
         print("Enter only numbers")
         continue
-    number_of_Luhn_algorithm = 0
+    number_Luhn = 0
     big_numbers = 0
-    little_numbers = 0
-    sum_of_the_other = 0
+    lit_numbers = 0
+    sum_other = 0
     if len(number) % 2 == 0:
         for i in range(0, len(number), 2):
             if (2 * int(number[i])) > 9:
                 big_numbers = big_numbers + (2 * int(number[i])) - 9
             if (2 * int(number[i])) <= 9:
-                little_numbers = little_numbers + (2 * int(number[i]))
+                lit_numbers = lit_numbers + (2 * int(number[i]))
         for e in range(1, len(number), 2):
-            sum_of_the_other = sum_of_the_other + int(number[e])
-            number_of_Luhn_algorithm = big_numbers + little_numbers + sum_of_the_other
-        if number_of_Luhn_algorithm % 10 == 0:
+            sum_other = sum_other + int(number[e])
+            number_Luhn = big_numbers + lit_numbers + sum_other
+        if number_Luhn % 10 == 0:
             print("Прошел проверку: ", number)
             break
         else:
@@ -37,11 +37,11 @@ while True:
             if (2 * int(number[b])) > 9:
                 big_numbers = big_numbers + (2 * int(number[b])) - 9
             if (2 * int(number[b])) <= 9:
-                little_numbers = little_numbers + (2 * int(number[b]))
+                lit_numbers = lit_numbers + (2 * int(number[b]))
         for c in range(0, len_1, 2):
-            sum_of_the_other = sum_of_the_other + int(number[c])
-            number_of_Luhn_algorithm = big_numbers + little_numbers + sum_of_the_other + int(number[-1])
-        if number_of_Luhn_algorithm % 10 == 0:
+            sum_other = sum_other + int(number[c])
+            number_Luhn = big_numbers + lit_numbers + sum_other + int(number[-1])
+        if number_Luhn % 10 == 0:
             print("Прошел проверку: ", number)
             break
         else:
