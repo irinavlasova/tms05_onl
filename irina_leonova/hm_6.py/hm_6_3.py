@@ -39,7 +39,11 @@ while True:
             print("None")
     if numbers == 4:
         if number_1 != 0 and number_2 != 0:
-            print("Частное: ", round(number_1 / number_2) - 1, ", Остаток: ", number_1 % number_2)
+            if number_1 % number_2 == 0:
+                print("Частное: ", number_1 // number_2)
+            else:
+                print("Частное: ", round(number_1 / number_2) - 1,
+                  ", Остаток: ", number_1 % number_2)
         if number_1 == 0 or number_2 == 0:
             print("None")
     break
