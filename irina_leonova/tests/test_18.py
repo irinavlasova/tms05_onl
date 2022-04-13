@@ -15,7 +15,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_sum_neg(self):
         answer = self.calc.sum(5, 4)
-        self.assertNotEqual(answer, 9)
+        self.assertNotEqual(answer, 10)
 
     def test_sub_pos(self):
         answer = self.calc.sub(5, 4)
@@ -23,7 +23,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_sub_neg(self):
         answer = self.calc.sub(5, 4)
-        self.assertNotEqual(answer, 1)
+        self.assertNotEqual(answer, 10)
 
     def test_mul_pos(self):
         answer = self.calc.mul(5, 4)
@@ -31,7 +31,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_mul_neg(self):
         answer = self.calc.mul(5, 4)
-        self.assertIsNot(answer, 20)
+        self.assertIsNot(answer, 10)
 
     def test_div_ops(self):
         answer = self.calc.div(5, 5)
@@ -39,7 +39,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_div_neg(self):
         answer = self.calc.div(5, 5)
-        self.assertNotEqual(answer, 1)
+        self.assertNotEqual(answer, 10)
 
 
 if __name__ == "__main__":
